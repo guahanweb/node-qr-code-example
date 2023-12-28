@@ -1,0 +1,9 @@
+extends layout.pug 
+
+block content
+    h4 Input
+    p Enter the URL or text below and click generate.
+    form.form(action="/generate" method="POST")
+        input.form-control(name="url" placeholder="URL or Text" type="text" required)
+        br
+        button.btn.btn-primary(type="submit" value="Generate") Generate

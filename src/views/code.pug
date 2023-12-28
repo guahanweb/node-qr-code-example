@@ -1,0 +1,10 @@
+extends layout.pug 
+
+block content
+    img(
+        src=src
+        alt="QR Code Image"
+    )
+    p Scan the QR Code to access your data
+    a(href="/")
+        button.btn.btn-primary(type="button") Back
